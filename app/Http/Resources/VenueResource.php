@@ -30,6 +30,7 @@ class VenueResource extends JsonResource
             'venue_kind'=> $this->venue_kind,
             'venue_socmed1' => $this->venue_socmed1,
             'venue_socmed2' => $this->venue_socmed2,
+            'venue_socmed3' => $this->venue_socmed3,
             'venue_website' => $this->venue_website,
             'venue_contact' => $this->venue_contact,
             'venue_decoration' => $this->venue_decoration,

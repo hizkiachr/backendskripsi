@@ -24,6 +24,7 @@ class Venue extends Model
         'venue_kind',
         'venue_socmed1',
         'venue_socmed2',
+        'venue_socmed3',
         'venue_website',
         'venue_contact',
         'venue_decoration',

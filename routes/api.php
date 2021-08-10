@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ResultController;
 use App\Http\Controllers\VenueController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -33,3 +34,5 @@ Route::prefix('contact')->group(function () {
 Route::prefix('about')->group(function () {
     Route::get('/', [AboutController::class,'index']);
 });
+
+Route::get('/result',[ResultController::class,'result']);
