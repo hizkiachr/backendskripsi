@@ -24,6 +24,7 @@ class VenueResource extends JsonResource
             'venue_address2' => $this->venue_address2,
             'venue_price' => $this->venue_price,
             'venue_capacity' => $this->venue_capacity,
+            'venue_facility' => $this->venue_facility,
             'venue_roomspace' => $this->venue_roomspace,
             'venue_description' => $this->venue_description,
             'venue_facility_list' => $this->venue_facility_list,

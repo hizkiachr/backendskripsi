@@ -18,9 +18,15 @@ class VenueController extends Controller
     public function index(Request $request)
     {
         $getVenues = $this->venueModel;
-        if($request->id){
-            $getVenues = $getVenues->where('id',$request->id);
+        if($request->kind){
+            $getVenues = $getVenues->where('venue_kind',$request->kind);
         }
+        if($request->decoration){
+            $getVenues = $getVenues->where('venue_decoration',$request->decoration);
+        }
+        $getVenues= $getVenues->get();
+        return VenueResource::collection($getVenues);
+
         $getVenues= $getVenues->get();
         return VenueResource::collection($getVenues);
     }
