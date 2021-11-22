@@ -35,6 +35,7 @@ class VenueResource extends JsonResource
             'venue_website' => $this->venue_website,
             'venue_contact' => $this->venue_contact,
             'venue_decoration' => $this->venue_decoration,
+            'venue_priice' => $this->venue_priice,
             'venue_banners' => VenueBannerResource::collection($this->venue_banners),
         ];
     }

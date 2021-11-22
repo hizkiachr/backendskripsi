@@ -28,7 +28,8 @@ class Venue extends Model
         'venue_website',
         'venue_contact',
         'venue_decoration',
-        'venue_facility'
+        'venue_facility',
+        'venue_priice'
     ];
 
     public function venue_banners(){
